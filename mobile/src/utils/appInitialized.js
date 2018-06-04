@@ -8,6 +8,7 @@ export default async function appInitialized() {
   await iconsLoaded();
 
   const token = await AsyncStorage.getItem(authToken);
+  console.log('token', token)
   // const token = await AsyncStorage.removeItem(authToken);
 
   if (!token) {

@@ -6,6 +6,7 @@ import LoginScreen from './LoginScreen';
 import CreatePhotoScreen from './CreatePhotoScreen';
 import CaptionScreen from './CaptionScreen';
 import CommentsScreen from './CommentsScreen';
+import TagsScreen from './TagsScreen';
 
 import WithProvider from '../components/WithProvider';
 
@@ -27,5 +28,8 @@ export const registerScreens = () => {
   );
   Navigation.registerComponent('instagramclone.CommentsScreen', () =>
     WithProvider(CommentsScreen),
+  );
+  Navigation.registerComponent('instagramclone.TagsScreen', () =>
+    WithProvider(TagsScreen),
   );
 };

@@ -95,10 +95,6 @@ class CreatePhotoScreen extends PureComponent {
       endCursor: res.page_info.end_cursor,
       firstQuery: false,
     });
-
-    console.log('====================================');
-    console.log('res', res);
-    console.log('====================================');
   };
 
   _renderItem = ({ item }) => {
